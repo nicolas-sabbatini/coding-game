@@ -1,0 +1,3 @@
+[workspace]
+
+members = ["detective-pikaptcha-ep2", "logic-gates"]
