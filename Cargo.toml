@@ -1,3 +1,8 @@
 [workspace]
 
-members = ["detective-pikaptcha-ep2", "logic-gates"]
+members = [
+    "detective-pikaptcha-ep1",
+    "detective-pikaptcha-ep2",
+    "logic-gates",
+    "equivalent-resistance-circuit-building",
+]

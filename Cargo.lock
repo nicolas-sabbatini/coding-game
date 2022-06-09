@@ -3,7 +3,15 @@
 version = 3
 
 [[package]]
+name = "detective-pikaptcha-ep1"
+version = "0.1.0"
+
+[[package]]
 name = "detective-pikaptcha-ep2"
+version = "0.1.0"
+
+[[package]]
+name = "equivalent-resistance-circuit-building"
 version = "0.1.0"
 
 [[package]]
