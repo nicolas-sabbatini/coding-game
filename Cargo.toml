@@ -1,9 +1,10 @@
 [workspace]
 
 members = [
-    "detective-pikaptcha-ep1",
-    "detective-pikaptcha-ep2",
-    "logic-gates",
-    "equivalent-resistance-circuit-building",
-    "asteroids",
+  "asteroids",
+  "detective-pikaptcha-ep1",
+  "detective-pikaptcha-ep2",
+  "equivalent-resistance-circuit-building",
+  "logic-gates",
+  "retro-typewriter-art",
 ]

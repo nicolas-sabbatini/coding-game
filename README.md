@@ -14,9 +14,12 @@ My solutions to the [Codingame](https://www.codingame.com/training) challenges:
 - [Equivalent Resistance, Circuit Building](https://www.codingame.com/training/easy/equivalent-resistance-circuit-building)
   - Lenguaje: Rust
   - Folder: equivalent-resistance-circuit-building
-- [ASTEROIDS](https://www.codingame.com/training/easy/asteroids)
+- [Asteroids](https://www.codingame.com/training/easy/asteroids)
   - Lenguaje: Rust
   - Folder: asteroids
+- [Retro typewriter art](https://www.codingame.com/training/easy/retro-typewriter-art)
+  - Lenguaje: Rust
+  - Folder: retro-typewriter-art
 
 # TODOs: 
 - [ ] Add the solutions of the other challenges.

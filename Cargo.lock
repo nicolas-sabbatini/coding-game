@@ -21,3 +21,7 @@ version = "0.1.0"
 [[package]]
 name = "logic-gates"
 version = "0.1.0"
+
+[[package]]
+name = "retro-typewriter-art"
+version = "0.1.0"
