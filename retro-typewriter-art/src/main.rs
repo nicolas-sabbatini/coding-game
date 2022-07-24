@@ -1,28 +1,25 @@
 use std::io;
 
-enum Command {
-    EndLine,
-    Char(usize, String),
-}
-
-impl From<String> for Command {
-    fn from(str: String) -> Self {
-        let s = &str[..str.len() - 1];
-        let rep = s.chars().take_while(|c| c.is_numeric()).collect::<String>();
-        if rep.is_empty() {
-            return Command::EndLine;
+fn parse_command(str: String) {
+    let mut chars = str.chars().collect::<Vec<char>>();
+    let last = chars.pop().unwrap();
+    let before_last = chars.pop().unwrap();
+    let p = match (before_last, last) {
+        ('n', 'l') => '\n',
+        ('s', 'p') => ' ',
+        ('b', 'S') => '\\',
+        ('s', 'Q') => '\'',
+        _ => {
+            chars.push(before_last);
+            last
         }
-        let n = rep.parse::<usize>().unwrap();
-        if rep.len() == (str.len() - 1) {
-            return Command::Char(n, String::from(&str[str.len() - 1..]));
-        }
-        match &str[str.len() - 2..] {
-            "sp" => Command::Char(n, " ".to_string()),
-            "bS" => Command::Char(n, "\\".to_string()),
-            "sQ" => Command::Char(n, "'".to_string()),
-            _ => panic!("Err"),
-        }
-    }
+    };
+    let n = chars
+        .iter()
+        .collect::<String>()
+        .parse::<usize>()
+        .unwrap_or(1);
+    print!("{}", p.to_string().repeat(n));
 }
 
 fn main() {
@@ -35,9 +32,6 @@ fn main() {
         .collect::<Vec<String>>();
 
     for command in input {
-        match Command::from(command) {
-            Command::EndLine => println!(),
-            Command::Char(n, s) => print!("{}", s.repeat(n)),
-        }
+        parse_command(command);
     }
 }
