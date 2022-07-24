@@ -14,7 +14,9 @@ My solutions to the [Codingame](https://www.codingame.com/training) challenges:
 - [Equivalent Resistance, Circuit Building](https://www.codingame.com/training/easy/equivalent-resistance-circuit-building)
   - Lenguaje: Rust
   - Folder: equivalent-resistance-circuit-building
+- [ASTEROIDS](https://www.codingame.com/training/easy/asteroids)
+  - Lenguaje: Rust
+  - Folder: asteroids
 
 # TODOs: 
 - [ ] Add the solutions of the other challenges.
-- [ ] Add more challenges.

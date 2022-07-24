@@ -5,4 +5,5 @@ members = [
     "detective-pikaptcha-ep2",
     "logic-gates",
     "equivalent-resistance-circuit-building",
+    "asteroids",
 ]
